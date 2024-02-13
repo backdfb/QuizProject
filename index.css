@@ -1,0 +1,184 @@
+/* #CAD8E6
+#FFF7EB
+#FFECCF
+#A2C6D8
+#78A3C5 */
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: "GmarketSansMedium", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .container{
+    width: 31.5rem;
+    height: 100%;
+    border: 2px solid black;
+  } */
+
+.flex_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_flex {
+  position: fixed;
+  top: 2rem;
+}
+
+/* 위에 프로그래스 바  */
+.progress_number {
+  font-size: 1rem;
+  color: #393939;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.progress_bar {
+  appearance: none;
+}
+
+.progress_bar::-webkit-progress-bar {
+  background-color: #f5f5f5;
+  width: 10rem;
+  height: 0.6rem;
+  border-radius: 1rem;
+  border: 2px solid #000000;
+}
+
+::-webkit-progress-value {
+  background-color: #78a3c5;
+  width: 10rem;
+  height: 0.7rem;
+  border-radius: 1rem;
+}
+
+/* 이미지 부터 퀴즈 관련된 부분 */
+
+.main-box {
+  position: fixed;
+  top: 8rem;
+}
+
+.section1_question {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* 질문 */
+.question {
+  text-align: center;
+  width: 20rem;
+  font-size: 1.3rem;
+}
+.quizimg {
+  width: 130px;
+  height: 130px;
+}
+
+/* 정답 선택지 */
+.section2 {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.answer_1,
+.answer_2 {
+  margin: 0;
+  background-color: transparent;
+}
+.answer {
+  display: flex;
+  width: 15rem;
+  font-size: 0.8rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border-radius: 0.7rem;
+  color: #000000;
+  padding: 0.9rem;
+  border: 2px solid #000000;
+  z-index: 999;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  justify-content: center;
+}
+
+.p {
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#a1 {
+  background-color: #fff7eb;
+}
+#a2 {
+  background-color: #ffeccf;
+}
+#a3 {
+  background-color: #a2c6d8;
+}
+#a4 {
+  background-color: #78a3c5;
+}
+
+/* Hover*/
+.answer:hover {
+  cursor: pointer;
+}
+p:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px #000000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+p:hover:after {
+  transform: scaleX(1);
+}
+
+/* CSS용 박스 */
+.section3 {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0.3rem;
+  top: -13.7rem;
+}
+.answer3 {
+  width: 15rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border-radius: 0.7rem;
+  /* background-color: #ffffff; */
+  border: 2px solid #000000;
+  z-index: 1;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="flex_item">
+        <header class="header_flex">
+          <p class="progress_number" id="progress"></p>
+          <progress max="150" value="0" class="progress_bar"></progress>
+        </header>
+        <main class="main-box">
+          <section class="section1_question">
+            <div class="imgbox" id="imgbox"></div>
+            <h3 class="question" id="question"></h3>
+          </section>
+          <section class="section2 answer_1">
+            <div class="box answer btn" id="a1" onclick="perIncrease()"></div>
+            <div class="box answer btn" id="a2" onclick="perIncrease()"></div>
+          </section>
+          <section class="section2 answer_2">
+            <div class="box answer btn" id="a3" onclick="perIncrease()"></div>
+            <div class="box answer btn" id="a4" onclick="perIncrease()"></div>
+          </section>
+          <section class="section3 answer_3">
+            <div class="box answer3"></div>
+            <div class="box answer3"></div>
+          </section>
+          <section class="section3 answer_3">
+            <div class="box answer3"></div>
+            <div class="box answer3"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div id="quiz"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

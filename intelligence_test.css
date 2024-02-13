@@ -1,0 +1,40 @@
+* {
+  background-color: #cad8e6;
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 100vh; 
+  text-align: center;
+}
+
+button.but {
+  background-color: #125bb4;
+  color: white;
+  width: 18rem;
+  height: 3.5rem;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 85%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+}
