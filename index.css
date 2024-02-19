@@ -41,6 +41,8 @@ body {
   align-items: center;
 }
 .header_flex {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 2rem;
 }
@@ -75,13 +77,15 @@ body {
 
 .main-box {
   position: fixed;
-  top: 8rem;
+  top: 5rem;
 }
 
 .section1_question {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  height: 17rem;
+  padding-bottom: 1.5rem;
 }
 
 /* 질문 */
@@ -124,13 +128,6 @@ body {
   transition: 0.5s;
   -webkit-transition: 0.5s;
   justify-content: center;
-}
-
-.p {
-  color: #000;
-  display: inline-block;
-  margin: 0;
-  text-transform: uppercase;
 }
 
 #a1 {
