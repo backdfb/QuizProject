@@ -15,8 +15,7 @@ function Quiz(questions) {
 
 // 정답 확인 메서드
 Quiz.prototype.correctAnswer = function (answer) {
-  return answer.trim() === 
-    this.questions[this.questionIndex].answer.trim();
+  return answer == this.questions[this.questionIndex].answer;
 };
 
 let questions = [
