@@ -23,7 +23,6 @@ function checkAnswer(i) {
   });
 }
 
-
 function result() {
   const quizDiv = document.getElementById("quiz");
 
@@ -58,14 +57,13 @@ function result() {
   const per = parseInt((quiz.score * 100) / quiz.questions.length);
   let txt =
     "<h1>결과</h1>" +
-    '<h2 id="score">당신의 점수: ' +
+    '<h3 id="score">당신의 점수: ' +
     quiz.score +
     "/" +
     quiz.questions.length +
-    "<br><br>" +
     per +
     "점" +
-    "</h2>";
+    "</h3>";
 
   // 점수별 결과 텍스트
   if (per < 20) {
@@ -80,7 +78,7 @@ function result() {
     resultHtml += getResultHtml(resultText[4]);
   }
 
-  quizDiv.innerHTML = txt;
+  quizDiv.textContent = txt;
 }
 
 for (let i = 0; i < btn.length; i++) {
