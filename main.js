@@ -235,3 +235,7 @@ function perIncrease() {
 
   progressBar.dispatchEvent(event);
 }
+
+// 클릭 이벤트에 함수 연결
+const button = document.querySelector("button");
+button.addEventListener("click", perIncrease);
