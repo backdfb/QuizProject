@@ -243,24 +243,27 @@ button.addEventListener("click", perIncrease);
 // 터치 이벤트에 함수 연결
 let touchStart = false; // 터치 시작 여부를 저장하는 변수
 
-button.addEventListener("touchstart", function(event) {
-  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+button.addEventListener("mousedown", function(event) {
+  event.preventDefault(); // 기본 마우스 다운 이벤트 동작 방지
   touchStart = true; // 터치 시작
   perIncrease(); // 터치 시작 시 증가 함수 호출
 });
 
-button.addEventListener("touchmove", function(event) {
-  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+button.addEventListener("mousemove", function(event) {
+  event.preventDefault(); // 기본 마우스 이동 이벤트 동작 방지
   if (touchStart) {
     perIncrease(); // 터치 중일 때 증가 함수 호출
   }
 });
 
-button.addEventListener("touchend", function(event) {
-  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+button.addEventListener("mouseup", function(event) {
+  event.preventDefault(); // 기본 마우스 업 이벤트 동작 방지
   touchStart = false; // 터치 종료
 });
 
 // iOS에서 터치 이벤트에 대한 이슈를 해결하기 위해 추가
 document.addEventListener("touchstart", function() {}, { passive: false });
+document.addEventListener("touchmove", function() {}, { passive: false });
+document.addEventListener("touchend", function() {}, { passive: false });
+
 
