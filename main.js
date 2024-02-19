@@ -15,7 +15,8 @@ function Quiz(questions) {
 
 // 정답 확인 메서드
 Quiz.prototype.correctAnswer = function (answer) {
-  return answer == this.questions[this.questionIndex].answer;
+  return answer.trim() === 
+    this.questions[this.questionIndex].answer.trim();
 };
 
 let questions = [
@@ -172,6 +173,8 @@ function checkAnswer(i) {
     } else {
       result();
     }
+
+    updateQuiz();
   });
 }
 
@@ -211,7 +214,7 @@ function result() {
   }
   quizDiv.innerHTML = txt;
 }
-for (let i = 0; i < btn.length; i++) {
+btn.forEach(button, i) => {
   checkAnswer(i);
 }
 
