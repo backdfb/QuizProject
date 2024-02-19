@@ -228,6 +228,12 @@ function perIncrease() {
   }
 
   // input 이벤트 강제 실행
+  const event = new Event("input", {
+    bubbles: true,
+    cancelable: true,
+  });
+
+  // touch 이벤트 강제 실행
   const event = new Event("touch", {
     bubbles: true,
     cancelable: true,
@@ -239,3 +245,4 @@ function perIncrease() {
 // 클릭 이벤트에 함수 연결
 const button = document.querySelector("button");
 button.addEventListener("click", perIncrease);
+button.addEventListener("touchstart", perIncrease);
