@@ -220,6 +220,7 @@ updateQuiz();
 
 //프로그레스 바
 const progressBar = document.querySelector(".progress_bar");
+progressBar.max = 100; // 최대값 설정
 
 function perIncrease() {
   if (progressBar.value < progressBar.max) { // 최대값을 넘지 않을 때만 증가
