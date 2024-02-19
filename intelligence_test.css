@@ -1,13 +1,68 @@
-* {
-  background-color: #cad8e6;
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#img {
+* {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: "GmarketSansMedium", Arial, Helvetica, sans-serif;
+
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container_flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#startpage{
+  width: 18rem;
+  height: 35rem;
+}
+
+.but{
+  background-color: #78A3C5;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: none;
+  filter: drop-shadow(1px 2px 4px rgb(151, 151, 151));
+  cursor: pointer;
+  position: relative;
+  top: -5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #img {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  height: 100vh; 
+  height: 100vh;
   text-align: center;
 }
 
@@ -21,20 +76,20 @@ button.but {
   border-radius: 50px;
   cursor: pointer;
   position: absolute;
-  top: 85%; 
-  left: 50%; 
+  top: 85%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 20px;
 }
 
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+} */
 
-.img img {
+/* .img img {
   display: block;
   margin: 0 auto;
-}
+} */ */
