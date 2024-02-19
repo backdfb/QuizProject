@@ -239,3 +239,8 @@ function perIncrease() {
 // 클릭 이벤트에 함수 연결
 const button = document.querySelector("button");
 button.addEventListener("click", perIncrease);
+
+// 터치 이벤트에 함수 연결
+button.addEventListener("touchstart", perIncrease);
+button.addEventListener("touchmove", perIncrease);
+button.addEventListener("touchend", perIncrease);
