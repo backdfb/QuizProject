@@ -222,7 +222,9 @@ updateQuiz();
 const progressBar = document.querySelector(".progress_bar");
 
 function perIncrease() {
-  progressBar.value += 10;
+  if (progressBar.value < progressBar.max) { // 최대값을 넘지 않을 때만 증가
+    progressBar.value++;
+  }
 
   // input 이벤트 강제 실행
   const event = new Event("input", {
