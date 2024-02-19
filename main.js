@@ -243,15 +243,17 @@ button.addEventListener("click", perIncrease);
 // 터치 이벤트에 함수 연결
 button.addEventListener("touchstart", function(event) {
   event.preventDefault(); // 기본 터치 이벤트 동작 방지
-  perIncrease();
+  touchStart = true; // 터치 시작
 });
 
 button.addEventListener("touchmove", function(event) {
   event.preventDefault(); // 기본 터치 이벤트 동작 방지
-  perIncrease();
+  if (touchStart) {
+    perIncrease();
+  }
 });
 
 button.addEventListener("touchend", function(event) {
   event.preventDefault(); // 기본 터치 이벤트 동작 방지
-  perIncrease();
+  touchStart = false; // 터치 종료
 });
