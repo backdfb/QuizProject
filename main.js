@@ -233,12 +233,6 @@ function perIncrease() {
     cancelable: true,
   });
 
-  // touch 이벤트 강제 실행
-  const event = new Event("touch", {
-    bubbles: true,
-    cancelable: true,
-  });
-
   progressBar.dispatchEvent(event);
 }
 
