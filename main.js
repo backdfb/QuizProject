@@ -218,7 +218,16 @@ for (let i = 0; i < btn.length; i++) {
 updateQuiz();
 
 //프로그레스 바
-const prgressBar = document.querySelector(".progress_bar");
+const progressBar = document.querySelector(".progress_bar");
+
 function perIncrease() {
-  prgressBar.value = prgressBar.value + 10;
+  progressBar.value += 10;
+
+  // input 이벤트 강제 실행
+  const event = new Event("input", {
+    bubbles: true,
+    cancelable: true,
+  });
+
+  progressBar.dispatchEvent(event);
 }
