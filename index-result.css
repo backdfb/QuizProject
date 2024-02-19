@@ -1,0 +1,33 @@
+/* #CAD8E6
+#FFF7EB
+#FFECCF
+#A2C6D8
+#78A3C5 */
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: "GmarketSansMedium", Arial, Helvetica, sans-serif;
+}
+
+#quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+}
+
+#score {
+  text-align: center;
+  /* position: relative;
+  top: 8rem; */
+  font-size: 1.2rem;
+}
