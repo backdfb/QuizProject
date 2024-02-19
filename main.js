@@ -241,6 +241,17 @@ const button = document.querySelector("button");
 button.addEventListener("click", perIncrease);
 
 // 터치 이벤트에 함수 연결
-button.addEventListener("touchstart", perIncrease);
-button.addEventListener("touchmove", perIncrease);
-button.addEventListener("touchend", perIncrease);
+button.addEventListener("touchstart", function(event) {
+  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+  perIncrease();
+});
+
+button.addEventListener("touchmove", function(event) {
+  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+  perIncrease();
+});
+
+button.addEventListener("touchend", function(event) {
+  event.preventDefault(); // 기본 터치 이벤트 동작 방지
+  perIncrease();
+});
