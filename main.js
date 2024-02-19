@@ -228,7 +228,7 @@ function perIncrease() {
   }
 
   // input 이벤트 강제 실행
-  const event = new Event("input", {
+  const event = new Event("touch", {
     bubbles: true,
     cancelable: true,
   });
