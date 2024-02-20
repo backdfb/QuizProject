@@ -23,7 +23,7 @@ let questions = [
     "1년 중 30일이 있는 달은 몇개?",
     "/img_assets/1. calender.png",
     ["4개", "5개", "6개", "7개"],
-    "5개"
+    "4개"
   ),
   new Question(
     "알지 못할 물건이 지저분하기만 함의 비유는?",
